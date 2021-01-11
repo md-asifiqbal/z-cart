@@ -1,0 +1,1 @@
+<li><a href="<?php echo e(route('account', 'dashboard'), false); ?>"><?php echo app('translator')->getFromJson('theme.nav.account'); ?></a></li><?php /**PATH /home/amraibes/public_html/public/themes/default/views/headers/lists/account.blade.php ENDPATH**/ ?>

@@ -1,0 +1,10 @@
+1. Live chat ( twak.to ) or facebook page live chat
+2. Contact email: admin@amraibest.com
+3. Otp login system for customer  Registration
+4. Vendor registration system a ( upload documents) passport / jonmo nibondon/NID)+Gmail Or Mobile otp registration
+5.Home screen design change
+
+
+https://66.42.58.32:2087
+username: root
+pass: {Z7e1G]eAa!u**ZJ

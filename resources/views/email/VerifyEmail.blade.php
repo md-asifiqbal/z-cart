@@ -1,0 +1,1 @@
+@if(isset($user->otp))Your OTP is {{$user->otp}}. Please don't share this OTP.@endif

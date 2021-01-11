@@ -1,0 +1,1 @@
+<li><a href="<?php echo e(route('account', 'disputes'), false); ?>"><?php echo app('translator')->getFromJson('theme.nav.refunds_disputes'); ?></a></li><?php /**PATH /home/amraibes/public_html/public/themes/default/views/headers/lists/disputes.blade.php ENDPATH**/ ?>

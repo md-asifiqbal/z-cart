@@ -1,0 +1,2 @@
+<!-- Ionicons -->
+<link href="https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css" rel="stylesheet"><?php /**PATH /home/amraibes/public_html/resources/views/plugins/ionic.blade.php ENDPATH**/ ?>

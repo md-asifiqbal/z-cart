@@ -1,0 +1,1 @@
+<li><a href="<?php echo e(route('account', 'orders'), false); ?>"><?php echo app('translator')->getFromJson('theme.nav.my_orders'); ?></a></li><?php /**PATH /home/amraibes/public_html/public/themes/default/views/headers/lists/orders.blade.php ENDPATH**/ ?>

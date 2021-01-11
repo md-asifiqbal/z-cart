@@ -1,0 +1,45 @@
+[2020-03-28 18:10:18] [Incevio\Cybersource\CybersourceSDK\Authentication\Core\MerchantConfiguration] [INFO] authenticationType =>JWT
+[DEBUG] HTTP Request body  ~BEGIN~
+{"clientReferenceInformation":{"code":"test_payment"},"processingInformation":{"capture":true,"commerceIndicator":"internet"},"paymentInformation":{"card":{"number":"4111111111111111","expirationMonth":"12","expirationYear":"2031","securityCode":"123"}},"orderInformation":{"amountDetails":{"totalAmount":"102.21","currency":"USD"},"billTo":{"firstName":"John","lastName":"Doe","company":"ABC Company","address1":"1 Market St","locality":"san francisco","administrativeArea":"CA","postalCode":"94105","country":"US","email":"test@cybs.com","phoneNumber":"4158880000"}}}
+~END~
+*   Trying 66.185.182.49:443...
+* TCP_NODELAY set
+* Connected to apitest.cybersource.com (66.185.182.49) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: D:\lv-package\final-bugfixing\cybersource-wrapper\src\CybersourceSDK\ssl/cacert.pem
+  CApath: none
+* SSL connection using TLSv1.2 / AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: C=US; ST=California; L=Foster City; jurisdictionC=US; jurisdictionST=Delaware; O=Cybersource Corporation; businessCategory=Private Organization; serialNumber=2838921; CN=apitest.cybersource.com
+*  start date: Jan 18 20:14:02 2019 GMT
+*  expire date: Feb 15 20:44:00 2021 GMT
+*  subjectAltName: host "apitest.cybersource.com" matched cert's "apitest.cybersource.com"
+*  issuer: C=US; O=Entrust, Inc.; OU=See www.entrust.net/legal-terms; OU=(c) 2014 Entrust, Inc. - for authorized use only; CN=Entrust Certification Authority - L1M
+*  SSL certificate verify ok.
+> POST /pts/v2/payments HTTP/1.1
+Host: apitest.cybersource.com
+User-Agent: Swagger-Codegen/1.0.0/php
+Accept: application/hal+json;charset=utf-8
+Content-Type: application/json
+Authorization:Bearer eyJ2LWMtbWVyY2hhbnQtaWQiOiJ0ZXN0cmVzdCIsIng1YyI6WyJNSUlDWHpDQ0FjaWdBd0lCQWdJV05UYzBOalkwTWpRek1EWTVNREUzTnpFd056QTBOakFOQmdrcWhraUc5dzBCXG5BUXNGQURBZU1Sd3dHZ1lEVlFRRERCTkRlV0psY2xOdmRYSmpaVU5sY25SQmRYUm9NQjRYRFRFNU1URXlOVEEyXG5ORFF3TTFvWERUSXhNVEV5TlRBMk5EUXdNMW93TkRFUk1BOEdBMVVFQXd3SWRHVnpkSEpsYzNReEh6QWRCZ05WXG5CQVVURmpVM05EWTJOREkwTXpBMk9UQXhOemN4TURjd05EWXdnZ0VpTUEwR0NTcUdTSWIzRFFFQkFRVUFBNElCXG5Ed0F3Z2dFS0FvSUJBUUMrQnRkTWNva2FLd1RlczlPK3NucWpXc2VoTzBcL1k0Q0pyd280Y2RHQ2FmUk82b3dzM1xubUMxeG1wU1l0dFRLSWRlR1IxcU9ZcFRTZVk5dUpoMmNDZmF5TUtYbWhRZjRkNXY4cE5Ebm1ZQk1HQndVMXdXalxubFlzTUxGYmNQRldqZFB0S2xvdTJSSVdaNTY2WVdJYldDQmYrRzRkSGtBMEQ3Q3NwM0ZUM2xuVU4ybWU0bEprbFxueXNmcXAxWDhxM0pEcVZJUUZWQWR1YW1oV0NZTVJTNUtnOHNLd01qbGRHUVVieTg4UytNT3djQ0EzSE9IVDY0YlxuYXJ2UElkMkV4cUFxdmZ5QkNQQVI0OVY2XC95d0RWc0g5U3lIZXdnMTIxY2tNY0E5ZzU1dElxZHN5SEdSWk45ZnNcbjIwa015cUVQNzhMNGN4ZmlzdVZRQzhrbmxmWnRkY3FWQVk3RkFnTUJBQUV3RFFZSktvWklodmNOQVFFTEJRQURcbmdZRUF0cENcL0VocVwvMlA3VmF6elk4MWdWbnBQZ0VqSFhQeUtrdHpiUlNWZFJHXC9NR2JWSjU5UVZKZUxuemdtekhcbm15cTBjSitRU1FQVk80NmJsb05GKzI5SVlRK3pWWVhhTmd2anFZUVNoWFBDNm5ZSW5GQ2ZPbjFwclJJSWNJdCtcbjViWkpZRmtRR1R6OGprRUF2QlpsYjBsdm02S3REVWI5T0xPMzhIMDV5U0xpbDY4PSJdLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJkaWdlc3QiOiJ5WVB5NDRVbXF5NHowOEM2S0dpTFUyYVZkNDlkQThPcGlLUUZFXC9TWTdOdz0iLCJkaWdlc3RBbGdvcml0aG0iOiJTSEEtMjU2IiwiaWF0IjoiU2F0LCAyOCBNYXIgMjAyMCAxODoxMDoxOCBHTVQifQ.AIdzgcYDoqKq0xT96kNAL0AKSrVauGEF5qZbVqKFTD9vx1fOuT4s4T0vcAkjvitiKHbn0Q5mUcoOg2YJXnj7nl02PL5HCvV7jIFXMeoBZGskM53K0Px6jpPLAU8Vr1MCjBLbIQ35vrJZZ77jdrTxaz9xe91nOLtsb4gotQHyKS4lg5FENTbbobc0Xbqdqo7UYkjMgnsbWcXRrjubbhiYltQOu_cOqPdlwoVNh-x2jVpJ12nlhAufluCeKnZ_UR9940eWGjvDzAxox5kpPUiBsRCxI7oMWZQ1fC3q3gEes2es7nHLQS45TbODthW1ZExPjFseHn4szsPA2OWFFRJXug
+v-c-client-id:cybs-rest-sdk-php-0.0.13.0
+Digest: SHA-256=yYPy44Umqy4z08C6KGiLU2aVd49dA8OpiKQFE/SY7Nw=
+Content-Length: 569
+
+* upload completely sent off: 569 out of 569 bytes
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 201 Created
+< Content-Type: application/hal+json
+< Content-Length: 926
+< X-Cnection: close
+< x-response-time: 424ms
+< Strict-Transport-Security: max-age=31536000
+< v-c-correlation-id: a7a00b07-b40e-4941-8633-9027d3f9e873
+<
+* Connection #0 to host apitest.cybersource.com left intact
+[DEBUG] HTTP Response body ~BEGIN~
+{"_links":{"void":{"method":"POST","href":"/pts/v2/payments/5854154197426437103005/voids"},"authReversal":{"method":"POST","href":"/pts/v2/payments/5854154197426437103005/reversals"},"self":{"method":"GET","href":"/pts/v2/payments/5854154197426437103005"},"capture":{"method":"POST","href":"/pts/v2/payments/5854154197426437103005/captures"},"refund":{"method":"POST","href":"/pts/v2/payments/5854154197426437103005/refunds"}},"clientReferenceInformation":{"code":"test_payment"},"id":"5854154197426437103005","orderInformation":{"amountDetails":{"totalAmount":"102.21","authorizedAmount":"102.21","currency":"USD"}},"paymentAccountInformation":{"card":{"type":"001"}},"paymentInformation":{"tokenizedCard":{"type":"001"}},"processorInformation":{"approvalCode":"888888","responseCode":"100","avs":{"code":"X","codeRaw":"I1"}},"reconciliationId":"71964474W88QUN7Q","status":"AUTHORIZED","submitTimeUtc":"2020-03-28T17:10:20Z"}
+~END~

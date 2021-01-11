@@ -1,0 +1,1 @@
+<?php if(isset($user->otp)): ?>Your OTP is <?php echo e($user->otp, false); ?>. Please don't share this OTP.<?php endif; ?><?php /**PATH /home/amraibest.com/public_html/resources/views/email/VerifyEmail.blade.php ENDPATH**/ ?>

@@ -1,0 +1,108 @@
+[2021-01-02 02:44:37] production.INFO: ............. Job Processing:: App\Listeners\System\NotifyAdminConfigUpdated .................  
+[2021-01-02 02:44:37] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Listeners\\System\\NotifyAdminConfigUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => 10,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Events\\CallQueuedListener',
+      'command' => 'O:36:"Illuminate\\Events\\CallQueuedListener":7:{s:5:"class";s:45:"App\\Listeners\\System\\NotifyAdminConfigUpdated";s:6:"method";s:6:"handle";s:4:"data";a:1:{i:0;O:37:"App\\Events\\System\\SystemConfigUpdated":1:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:16:"App\\SystemConfig";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}}}s:5:"tries";i:10;s:9:"timeoutAt";N;s:7:"timeout";N;s:6:"' . "\0" . '*' . "\0" . 'job";N;}',
+    ),
+  ),
+)  
+[2021-01-02 02:44:37] production.INFO: ............. Job Processing:: App\Notifications\System\SystemConfigUpdated .................  
+[2021-01-02 02:44:37] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Notifications\\System\\SystemConfigUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => NULL,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Notifications\\SendQueuedNotifications',
+      'command' => 'O:48:"Illuminate\\Notifications\\SendQueuedNotifications":11:{s:11:"notifiables";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:8:"App\\User";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:12:"notification";O:44:"App\\Notifications\\System\\SystemConfigUpdated":9:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:16:"App\\SystemConfig";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:2:"id";s:36:"d55a0154-49df-4704-abad-d3e1d8ee7533";s:6:"locale";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}s:8:"channels";a:1:{i:0;s:4:"mail";}s:5:"tries";N;s:7:"timeout";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}',
+    ),
+  ),
+)  
+[2021-01-02 02:44:37] production.INFO: ......................... Job Processed Successfully .............................  
+[2021-01-02 02:44:37] production.INFO: ............. Job Processing:: App\Notifications\System\SystemConfigUpdated .................  
+[2021-01-02 02:44:37] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Notifications\\System\\SystemConfigUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => NULL,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Notifications\\SendQueuedNotifications',
+      'command' => 'O:48:"Illuminate\\Notifications\\SendQueuedNotifications":11:{s:11:"notifiables";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:8:"App\\User";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:12:"notification";O:44:"App\\Notifications\\System\\SystemConfigUpdated":9:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:16:"App\\SystemConfig";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:2:"id";s:36:"d55a0154-49df-4704-abad-d3e1d8ee7533";s:6:"locale";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}s:8:"channels";a:1:{i:0;s:8:"database";}s:5:"tries";N;s:7:"timeout";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}',
+    ),
+  ),
+)  
+[2021-01-02 02:44:37] production.INFO: ......................... Job Processed Successfully .............................  
+[2021-01-02 02:44:37] production.INFO: ......................... Job Processed Successfully .............................  
+[2021-01-02 02:51:49] production.INFO: ............. Job Processing:: App\Listeners\System\NotifyAdminSystemUpdated .................  
+[2021-01-02 02:51:49] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Listeners\\System\\NotifyAdminSystemUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => 20,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Events\\CallQueuedListener',
+      'command' => 'O:36:"Illuminate\\Events\\CallQueuedListener":7:{s:5:"class";s:45:"App\\Listeners\\System\\NotifyAdminSystemUpdated";s:6:"method";s:6:"handle";s:4:"data";a:1:{i:0;O:35:"App\\Events\\System\\SystemInfoUpdated":1:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:10:"App\\System";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}}}s:5:"tries";i:20;s:9:"timeoutAt";N;s:7:"timeout";N;s:6:"' . "\0" . '*' . "\0" . 'job";N;}',
+    ),
+  ),
+)  
+[2021-01-02 02:51:49] production.INFO: ............. Job Processing:: App\Notifications\System\SystemInfoUpdated .................  
+[2021-01-02 02:51:49] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Notifications\\System\\SystemInfoUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => NULL,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Notifications\\SendQueuedNotifications',
+      'command' => 'O:48:"Illuminate\\Notifications\\SendQueuedNotifications":11:{s:11:"notifiables";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:8:"App\\User";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:12:"notification";O:42:"App\\Notifications\\System\\SystemInfoUpdated":9:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:10:"App\\System";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:2:"id";s:36:"470d0c67-6854-40fa-b2d4-a1c4f4a44c43";s:6:"locale";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}s:8:"channels";a:1:{i:0;s:4:"mail";}s:5:"tries";N;s:7:"timeout";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}',
+    ),
+  ),
+)  
+[2021-01-02 02:51:50] production.INFO: ......................... Job Processed Successfully .............................  
+[2021-01-02 02:51:50] production.INFO: ............. Job Processing:: App\Notifications\System\SystemInfoUpdated .................  
+[2021-01-02 02:51:50] production.INFO: array (
+  'payload' => 
+  array (
+    'displayName' => 'App\\Notifications\\System\\SystemInfoUpdated',
+    'job' => 'Illuminate\\Queue\\CallQueuedHandler@call',
+    'maxTries' => NULL,
+    'delay' => NULL,
+    'timeout' => NULL,
+    'timeoutAt' => NULL,
+    'data' => 
+    array (
+      'commandName' => 'Illuminate\\Notifications\\SendQueuedNotifications',
+      'command' => 'O:48:"Illuminate\\Notifications\\SendQueuedNotifications":11:{s:11:"notifiables";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:8:"App\\User";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:12:"notification";O:42:"App\\Notifications\\System\\SystemInfoUpdated":9:{s:6:"system";O:45:"Illuminate\\Contracts\\Database\\ModelIdentifier":4:{s:5:"class";s:10:"App\\System";s:2:"id";i:1;s:9:"relations";a:0:{}s:10:"connection";s:5:"mysql";}s:2:"id";s:36:"470d0c67-6854-40fa-b2d4-a1c4f4a44c43";s:6:"locale";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}s:8:"channels";a:1:{i:0;s:8:"database";}s:5:"tries";N;s:7:"timeout";N;s:10:"connection";N;s:5:"queue";N;s:15:"chainConnection";N;s:10:"chainQueue";N;s:5:"delay";N;s:7:"chained";a:0:{}}',
+    ),
+  ),
+)  
+[2021-01-02 02:51:50] production.INFO: ......................... Job Processed Successfully .............................  
+[2021-01-02 02:51:50] production.INFO: ......................... Job Processed Successfully .............................  

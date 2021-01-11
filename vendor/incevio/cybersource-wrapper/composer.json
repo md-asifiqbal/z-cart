@@ -1,0 +1,44 @@
+{
+    "name": "incevio/cybersource-wrapper",
+    "description": "This is a simple cybersource wrapper",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Incevio Team",
+            "email": "help@incevio.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "firebase/php-jwt": "5.0.0",
+        "illuminate/support": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Incevio\\Cybersource\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Incevio\\Cybersource\\Providers\\CybersourceServiceProvider"
+            ],
+            "aliases": {
+                "CybersourcePayments": "Incevio\\Cybersource\\Facades\\CybersourcePaymentsFacade"
+            }
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover",
+            "php artisan vendor:publish --tag=cybersource-config-file --force"
+        ],
+        "post-install-cmd": [
+              "php artisan vendor:publish --tag=cybersource-config-file --force"
+        ],
+        "post-update-cmd": [
+              "php artisan vendor:publish --tag=cybersource-config-file --force"
+        ]
+    }
+}

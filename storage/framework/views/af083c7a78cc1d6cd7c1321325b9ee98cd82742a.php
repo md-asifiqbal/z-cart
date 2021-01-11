@@ -1,0 +1,1 @@
+<li><a href="<?php echo e(route('categories'), false); ?>"><?php echo app('translator')->getFromJson('theme.nav.categories'); ?></a></li><?php /**PATH /home/amraibes/public_html/public/themes/default/views/headers/lists/categories.blade.php ENDPATH**/ ?>
